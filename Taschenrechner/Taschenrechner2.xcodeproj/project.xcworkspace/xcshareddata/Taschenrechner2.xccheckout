@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>79127A07-D9AE-43B6-8D09-66EE1A1697C4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Taschenrechner2</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E3BBFFA72A77506F7D2D5A2CEB3C9566E81C843F</key>
+		<string>github.com:swiftdetut/10-Taschenrechner</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Taschenrechner/Taschenrechner2.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E3BBFFA72A77506F7D2D5A2CEB3C9566E81C843F</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:swiftdetut/10-Taschenrechner</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E3BBFFA72A77506F7D2D5A2CEB3C9566E81C843F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E3BBFFA72A77506F7D2D5A2CEB3C9566E81C843F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>10-Taschenrechner</string>
+		</dict>
+	</array>
+</dict>
+</plist>
