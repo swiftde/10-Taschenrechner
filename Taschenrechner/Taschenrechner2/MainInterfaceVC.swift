@@ -18,8 +18,8 @@ class MainInterfaceVC: UIViewController,  UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        zahl1TF?.delegate = self
-        zahl2TF?.delegate = self
+        zahl1TF.delegate = self
+        zahl2TF.delegate = self
     }
     
     func textField(textField: UITextField!, shouldChangeCharactersInRange range: NSRange, replacementString string: String!) -> Bool {
@@ -35,20 +35,20 @@ class MainInterfaceVC: UIViewController,  UITextFieldDelegate {
     }
     
     func refreshUIElements() {
-        if zahl1TF?.text.lengthOfBytesUsingEncoding(NSASCIIStringEncoding) == 0 ||
-            zahl2TF?.text.lengthOfBytesUsingEncoding(NSASCIIStringEncoding) == 0 {
+        if zahl1TF.text.lengthOfBytesUsingEncoding(NSASCIIStringEncoding) == 0 ||
+            zahl2TF.text.lengthOfBytesUsingEncoding(NSASCIIStringEncoding) == 0 {
                 ergebnisLabel?.text = "Bitte geben Sie beide Zahlen an!"
                 return
         }
         let zahl1 = NSString(string:zahl1TF.text).doubleValue
         let zahl2 = NSString(string:zahl2TF.text).doubleValue
         
-        switch operatorSC!.selectedSegmentIndex {
-        case 0: ergebnisLabel?.text = "Ergebnis: \(zahl1 + zahl2)"
-        case 1: ergebnisLabel?.text = "Ergebnis: \(zahl1 - zahl2)"
-        case 2: ergebnisLabel?.text = "Ergebnis: \(zahl1 * zahl2)"
-        case 3: ergebnisLabel?.text = "Ergebnis: \(zahl1 / zahl2)"
-        default: ergebnisLabel?.text = "Fehler!"
+        switch operatorSC.selectedSegmentIndex {
+        case 0: ergebnisLabel.text = "Ergebnis: \(zahl1 + zahl2)"
+        case 1: ergebnisLabel.text = "Ergebnis: \(zahl1 - zahl2)"
+        case 2: ergebnisLabel.text = "Ergebnis: \(zahl1 * zahl2)"
+        case 3: ergebnisLabel.text = "Ergebnis: \(zahl1 / zahl2)"
+        default: ergebnisLabel.text = "Fehler!"
         }
     }
 }
