@@ -10,11 +10,11 @@ import UIKit
 
 class MainInterfaceVC: UIViewController,  UITextFieldDelegate {
 
-    @IBOutlet var zahl1TF: UITextField?
-    @IBOutlet var zahl2TF: UITextField?
-    @IBOutlet var operatorSC: UISegmentedControl?
+    @IBOutlet var zahl1TF: UITextField!
+    @IBOutlet var zahl2TF: UITextField!
+    @IBOutlet var operatorSC: UISegmentedControl!
     
-    @IBOutlet var ergebnisLabel: UILabel?
+    @IBOutlet var ergebnisLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,8 +40,8 @@ class MainInterfaceVC: UIViewController,  UITextFieldDelegate {
                 ergebnisLabel?.text = "Bitte geben Sie beide Zahlen an!"
                 return
         }
-        let zahl1 = NSString(string:zahl1TF?.text).doubleValue
-        let zahl2 = NSString(string:zahl2TF?.text).doubleValue
+        let zahl1 = NSString(string:zahl1TF.text).doubleValue
+        let zahl2 = NSString(string:zahl2TF.text).doubleValue
         
         switch operatorSC!.selectedSegmentIndex {
         case 0: ergebnisLabel?.text = "Ergebnis: \(zahl1 + zahl2)"
